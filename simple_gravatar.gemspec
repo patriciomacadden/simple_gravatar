@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = SimpleGravatar::VERSION
   s.authors     = ['Patricio Mac Adden']
   s.email       = ['patriciomacadden@gmail.com']
-  s.homepage    = ''
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = 'https://github.com/patriciomacadden/simple_gravatar'
+  s.summary     = %q{Add gravatars to your ruby project as simple as possible.}
+  s.description = %q{Add gravatars to your ruby project as simple as possible.}
 
   s.rubyforge_project = 'simple_gravatar'
 
