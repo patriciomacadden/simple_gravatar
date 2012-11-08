@@ -2,6 +2,8 @@
 
 Add gravatars to your ruby project as simple as possible.
 
+[![Build Status](https://travis-ci.org/patriciomacadden/simple_gravatar.png)](https://travis-ci.org/patriciomacadden/simple_gravatar)
+
 ## Installation
 
 Add it to your Gemfile and run the `bundle` command:
