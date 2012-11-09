@@ -1,10 +1,6 @@
-# SimpleGravatar
+# SimpleGravatar [![Build Status](https://travis-ci.org/patriciomacadden/simple_gravatar.png)](https://travis-ci.org/patriciomacadden/simple_gravatar) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/patriciomacadden/simple_gravatar)
 
-Add gravatars to your ruby project as simple as possible.
-
-[![Build Status](https://travis-ci.org/patriciomacadden/simple_gravatar.png)](https://travis-ci.org/patriciomacadden/simple_gravatar)
-
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/patriciomacadden/simple_gravatar)
+### Add gravatars to your ruby project as simple as possible.
 
 ## Installation
 
