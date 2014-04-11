@@ -1,10 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require 'simple_gravatar/version'
 
 Gem::Specification.new do |s|
   s.name        = 'simple_gravatar'
-  s.version     = SimpleGravatar::VERSION
+  s.version     = '0.1.0'
   s.authors     = ['Patricio Mac Adden']
   s.email       = ['patriciomacadden@gmail.com']
   s.homepage    = 'https://github.com/patriciomacadden/simple_gravatar'
@@ -18,9 +17,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
-  s.add_dependency 'railties'
-  s.add_dependency 'activesupport'
+  s.add_development_dependency 'bundler', '~> 1.5.0'
+  s.add_development_dependency 'coveralls'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'minitest'
 end

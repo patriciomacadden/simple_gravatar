@@ -1,16 +1,9 @@
-require 'spec_helper'
+require 'minitest_helper'
 
 include SimpleGravatar
 
 describe SimpleGravatar do
-  describe SimpleGravatar::VERSION do
-    it 'should be defined' do
-      SimpleGravatar::VERSION.wont_be_nil
-    end
-  end
-
   describe :gravatar_url do
-
     let(:email) { 'some_email@gmail.com' }
 
     it 'should digest the email' do

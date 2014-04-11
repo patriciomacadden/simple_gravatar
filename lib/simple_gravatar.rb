@@ -1,5 +1,3 @@
-require 'simple_gravatar/version'
-
 module SimpleGravatar
   DEFAULT_OPTIONS = {
     default: nil,
@@ -10,7 +8,7 @@ module SimpleGravatar
   }
 
   def gravatar_url(email, options = {})
-    options = options.reverse_merge(DEFAULT_OPTIONS)
+    options = DEFAULT_OPTIONS.merge options
     secure = options[:secure]
     options.delete(:secure)
 
@@ -18,7 +16,7 @@ module SimpleGravatar
       options.delete(:forcedefault)
     end
 
-    gravatar_id = Digest::MD5.hexdigest(email.downcase)
+    gravatar_id = Digest::MD5.hexdigest email.downcase
 
     params = options.collect { |k, v| "#{k}=#{v}" }.join('&')
 
@@ -31,5 +29,3 @@ module SimpleGravatar
     "#{url}/#{gravatar_id}.png?#{params}"
   end
 end
-
-ActionView::Base.send(:include, SimpleGravatar) if defined? ActionView::Base
