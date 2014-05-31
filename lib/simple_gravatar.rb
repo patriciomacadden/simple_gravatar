@@ -1,3 +1,5 @@
+require 'digest'
+
 module SimpleGravatar
   DEFAULT_OPTIONS = {
     default: nil,
@@ -9,21 +11,20 @@ module SimpleGravatar
 
   def gravatar_url(email, options = {})
     options = DEFAULT_OPTIONS.merge options
-    secure = options[:secure]
-    options.delete(:secure)
+    secure = options.delete :secure
 
     unless options[:forcedefault]
-      options.delete(:forcedefault)
+      options.delete :forcedefault
     end
 
     gravatar_id = Digest::MD5.hexdigest email.downcase
 
-    params = options.collect { |k, v| "#{k}=#{v}" }.join('&')
+    params = options.collect { |k, v| "#{k}=#{v}" }.join '&'
 
     url = if secure
-      "https://secure.gravatar.com/avatar"
+      'https://secure.gravatar.com/avatar'
     else
-      "http://gravatar.com/avatar"
+      'http://gravatar.com/avatar'
     end
 
     "#{url}/#{gravatar_id}.png?#{params}"

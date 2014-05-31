@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'simple_gravatar'
-  s.version     = '0.1.0'
+  s.version     = '0.2.0'
   s.authors     = ['Patricio Mac Adden']
   s.email       = ['patriciomacadden@gmail.com']
   s.homepage    = 'https://github.com/patriciomacadden/simple_gravatar'
@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'bundler', '~> 1.6.0'
   s.add_development_dependency 'codeclimate-test-reporter'
   s.add_development_dependency 'rake'
-  s.add_development_dependency 'minitest'
+  s.add_development_dependency 'oktobertest'
 end
