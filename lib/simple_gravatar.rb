@@ -17,7 +17,7 @@ module SimpleGravatar
       options.delete :forcedefault
     end
 
-    gravatar_id = Digest::MD5.hexdigest email.downcase
+    gravatar_id = Digest::MD5.hexdigest email.to_s.downcase
 
     params = options.collect { |k, v| "#{k}=#{v}" }.join '&'
 
